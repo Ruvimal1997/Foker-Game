@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.security.SecureRandom;
 import java.util.Random;
 import javax.imageio.ImageIO;
-
+import java.util.ArrayList;
+import java.util.Collections;
 public class Deck
 {
   private Card[] deck;
@@ -40,8 +41,7 @@ public class Deck
           
       }
   }
-  
-  public void displayDeck()
+   public void displayDeck()
   {
       for(Card card:deck)
       {
