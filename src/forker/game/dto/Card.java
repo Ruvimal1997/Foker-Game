@@ -1,4 +1,3 @@
-
 package forker.game.dto;
 
 import java.awt.BorderLayout;
@@ -12,7 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
-public class Card {
+public class Card 
+{
    
     private String facename,suit;
     private int facevalue;
@@ -38,7 +38,7 @@ public class Card {
      */
     public String tostring()
     {
-        return facename+"of"+suit;
+        return facename+" of "+suit;
     }
     /**
      * return the face value of the card
@@ -49,13 +49,13 @@ public class Card {
         return facevalue;
     }
      public BufferedImage getCardImage() 
-     {
-            return cardImage;
-        }
-    /*public static void main (String[] args) throws IOException
+    {
+        return cardImage;
+    }
+    public static void main (String[] args) throws IOException
     {
         Card aceofspades=new Card("Spades","Ace",14,ImageIO.read(new File("Ace_Spades.png")));
-        System.out.println(aceofspades.toString());
+        System.out.println(aceofspades.tostring());
         System.out.println("the ace of spades has a value of "+aceofspades.getFacevalue());
         
         //create a jframe to display card
@@ -71,6 +71,6 @@ public class Card {
         
         conentpane.add(cardLabel);
         window.add(conentpane); 
-    }*/
+    }
     
 }
